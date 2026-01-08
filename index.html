@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma Boutique en Ligne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-index">
+
+    <header class="site-header">
+        <div class="logo-circle">MB</div>
+        <div>
+            <h1 class="site-title">Ma Boutique en Ligne</h1>
+            <p class="site-subtitle">Informatique, vêtements et accessoires</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="produits.html">Panier</a>
+        <a href="reclamation.html">Réclamation</a>
+    </nav>
+
+    <p class="cart-info">Panier : <span id="cart-count">0</span> article(s)</p>
+
+    <h2>Filtrer par catégorie</h2>
+
+    <select id="category-filter">
+        <option value="Toutes">Toutes</option>
+        <option value="Informatique">Informatique</option>
+        <option value="Vetement">Vêtement</option>
+        <option value="Accessoire">Accessoire</option>
+    </select>
+
+    <h2>Produits</h2>
+
+    <div id="products-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

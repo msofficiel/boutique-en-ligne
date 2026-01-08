@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Réclamation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-reclamation">
+
+    <header class="site-header">
+        <div class="logo-circle">MB</div>
+        <div>
+            <h1 class="site-title">Ma Boutique en Ligne</h1>
+            <p class="site-subtitle">Formulaire de réclamation</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="produits.html">Panier</a>
+        <a href="reclamation.html">Réclamation</a>
+    </nav>
+
+    <p class="cart-info">Panier : <span id="cart-count">0</span> article(s)</p>
+
+    <h2>Réclamation</h2>
+
+    <form id="reclamation-form">
+        <label>Nom :
+            <input type="text" id="nom">
+        </label>
+
+        <label>Prénom :
+            <input type="text" id="prenom">
+        </label>
+
+        <label>Email :
+            <input type="email" id="email">
+        </label>
+
+        <label>Téléphone :
+            <input type="tel" id="telephone">
+        </label>
+
+        <label>Numéro de commande :
+            <input type="text" id="numero-commande">
+        </label>
+
+        <label>Type de problème :
+            <select id="type-probleme">
+                <option value="livraison">Livraison</option>
+                <option value="produit">Produit abîmé</option>
+                <option value="facture">Facture</option>
+                <option value="autre">Autre</option>
+            </select>
+        </label>
+
+        <label>Message :
+            <textarea id="message" rows="4"></textarea>
+        </label>
+
+        <label>
+            <input type="checkbox" id="conditions"> J’accepte les conditions
+        </label>
+
+        <button type="submit">Envoyer</button>
+
+        <p id="form-error"></p>
+        <p id="form-success"></p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Panier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-produits">
+
+    <header class="site-header">
+        <div class="logo-circle">MB</div>
+        <div>
+            <h1 class="site-title">Ma Boutique en Ligne</h1>
+            <p class="site-subtitle">Votre panier</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="produits.html">Panier</a>
+        <a href="reclamation.html">Réclamation</a>
+    </nav>
+
+    <p class="cart-info">Panier : <span id="cart-count">0</span> article(s)</p>
+
+    <h2>Produits dans le panier</h2>
+
+    <div id="cart-items"></div>
+
+    <p id="cart-total">Total : 0.00 €</p>
+
+    <button id="btn-clear-cart">Vider le panier</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

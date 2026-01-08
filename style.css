@@ -1,0 +1,252 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #f49d5a, #daa232);
+    margin: 0;
+    padding: 30px 15px;
+}
+
+.page-index,
+.page-produits,
+.page-reclamation {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px 22px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 12px 16px;
+    background: linear-gradient(90deg, rgb(188, 92, 8), rgb(164, 123, 73));
+    color: white;
+    border-radius: 10px;
+}
+
+.logo-circle {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: white;
+    color: rgb(241, 180, 105);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.site-subtitle {
+    margin: 2px 0 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+nav {
+    margin: 15px 0 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 2px solid white;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: rgb(133, 107, 76);
+}
+
+nav a:hover {
+    background-color: rgb(247, 201, 144);
+    color: white;
+    transform: translateY(-1px);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.cart-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    background-color: #f3f4f6;
+    border-radius: 999px;
+    font-size: 0.95rem;
+}
+
+#cart-count {
+    background-color: red;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+#products-container {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 18px;
+}
+
+.product-card {
+    background-color: rgb(249, 250, 251);
+    border: 1px solid rgb(229, 231, 235);
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+}
+
+.product-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.product-card h3 {
+    margin: 4px 0;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.product-category {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin: 2px 0 4px;
+}
+
+.product-price {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: rgb(11, 11, 11);
+    color: rgb(237, 241, 243);
+    border: none;
+    cursor: pointer;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+    background-color: rgb(61, 61, 188);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+    transform: translateY(-1px);
+}
+
+#btn-clear-cart {
+    background-color: red;
+    margin-top: 15px;
+}
+
+#btn-clear-cart:hover {
+    background-color: rgb(235, 62, 62);
+}
+
+#cart-items {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-item {
+    background-color: rgb(249, 250, 251);
+    border: 1px solid rgb(229, 231, 235);
+    padding: 10px 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#category-filter {
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid #d1d5db;
+    background-color: #f9fafb;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+#reclamation-form {
+    max-width: 500px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(249, 250, 251);
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 12px;
+}
+
+#reclamation-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#reclamation-form input,
+#reclamation-form select,
+#reclamation-form textarea {
+    width: 100%;
+    padding: 7px 9px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-weight: 400;
+    background-color: white;
+}
+
+#reclamation-form textarea {
+    resize: vertical;
+}
+
+#form-error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#form-success {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
